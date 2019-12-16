@@ -2,9 +2,14 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import SearchForm from './SearchForm';
-
+import styled from 'styled-components';
 
 import CharacterCard from './CharacterCard';
+
+const Centered = styled.div`
+  margin: auto;
+  text-align: center;
+`;
 
 export default function CharacterList() {
   const [characters, setCharacters] = useState([]);
@@ -32,7 +37,7 @@ export default function CharacterList() {
 
   return (
     <section>
-      <Link className='links' to={'/'}>Home</Link>
+      <Centered><div className="links"><Link to={'/'}>Home</Link></div></Centered>
       <SearchForm searching={searching} character={characters} />
       {dataIsFiltered.map(character => (
         <CharacterCard

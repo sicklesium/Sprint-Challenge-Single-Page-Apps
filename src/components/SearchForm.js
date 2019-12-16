@@ -28,7 +28,7 @@ function SearchForm(props) {
           type='text'
           name='character'
           id='character'
-          placeholder='Search...'
+          placeholder='Hit Enter to Search...'
         />
       </form>
     </section>

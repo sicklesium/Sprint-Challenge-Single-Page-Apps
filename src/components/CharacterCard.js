@@ -6,20 +6,23 @@ const CharCard = styled.div`
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  border: 2px dashed #A9D3E9;
+  border-radius: 25%;
+  background: white;
+  margin: 3%;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-bottom: 3%;
 `;
 
-const CharName = styled.h1`
-  padding-bottom: 1%;
-  float: left;
-`;
 
 const CharacterCard = props => {
   return (
     <CharCard>
-      <CharName>{props.name}</CharName>
-      <p><strong>Gender:</strong> {props.gender}</p>
-      <p><strong>Species:</strong> {props.species}</p>
-      <p><strong>Status...?:</strong> {props.status}</p>
+      <h1 className='charHeader'>{props.name}</h1>
+      <p className="charPara"><strong>Gender:</strong> {props.gender}</p>
+      <p className="charPara"><strong>Species:</strong> {props.species}</p>
+      <p className="charPara"><strong>Status...?:</strong> {props.status}</p>
     </CharCard>
   )
 }

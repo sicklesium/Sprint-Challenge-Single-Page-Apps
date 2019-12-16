@@ -40,3 +40,34 @@ main {
 header h1 {
   text-align: center;
 }
+
+.charHeader {
+  margin-bottom: -20px;
+}
+
+.charPara {
+  margin-bottom: -20px;
+}
+
+.links {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.links a {
+  margin-top: 3%;
+  padding: 3%;
+  background: #A9D3E9;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #A9D3E9;
+  background: white;
+}
+
+.search-form {
+  text-align: center;
+}

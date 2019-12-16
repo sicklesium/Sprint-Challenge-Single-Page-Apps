@@ -6,6 +6,11 @@ const Header = styled.h1`
   color: #97D7D7;
 `;
 
+const Centered = styled.div`
+  margin: auto;
+  text-align: center;
+`;
+
 export default function WelcomePage() {
   return (
     <section className="welcome-page">
@@ -16,7 +21,7 @@ export default function WelcomePage() {
           src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
           alt="rick"
         />
-        <Link className='bigLink' to={'/characters'}>Character List Here!</Link>
+        <Centered><div className="links"><Link to={'/characters'}>Character List Here!</Link></div></Centered>
       </header>
     </section>
   );
