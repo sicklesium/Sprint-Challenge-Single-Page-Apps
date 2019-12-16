@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: Because server-side routing requests from the server every time something happens/is clicked/etc, it reloads the page. Client-side routing does not reload the page, instead relying on JS. JS can retain the state/memory within applications and only display a certain element or resource when that element or resource is requested. 
 
 ## Project Set Up
 
